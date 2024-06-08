@@ -1,0 +1,10 @@
+{
+  "experimentalTernaries": true,
+  "singleQuote": true,
+  "tsxSingleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true
+}
