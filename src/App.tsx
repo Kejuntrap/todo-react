@@ -35,6 +35,7 @@ function App(): ReactElement {
 
   const handleTabChange = (e: React.SyntheticEvent, newValue: string) => {
     console.log(e);
+    console.log(value);
     setValue(newValue);
     navigate('/' + newValue);
   };
