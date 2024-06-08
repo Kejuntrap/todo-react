@@ -13,8 +13,9 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
+
       {
-        path: 'todo',
+        path: '',
         element: <ToDos />,
       },
       {

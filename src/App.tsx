@@ -23,7 +23,7 @@ import { AccountCircle } from '@mui/icons-material';
 import React from 'react';
 
 function App(): ReactElement {
-  const [value, setValue] = React.useState('todo');
+  const [value, setValue] = React.useState('');
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const handleMenu = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
@@ -78,10 +78,10 @@ function App(): ReactElement {
                     keepMounted
                     transformOrigin={{ vertical: 'top', horizontal: 'right' }}
                     open={Boolean(anchorEl)}
-                    onClose={() => handleClose}
+                    onClose={handleClose}
                   >
-                    <MenuItem onClick={() => handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={() => handleClose}>My account</MenuItem>
+                    <MenuItem onClick={handleClose}>Profile</MenuItem>
+                    <MenuItem onClick={handleClose}>My account</MenuItem>
                   </Menu>
                 </Box>
               }
@@ -100,7 +100,7 @@ function App(): ReactElement {
           >
             <BottomNavigationAction
               label='Doing Tasks'
-              value='todo'
+              value=''
               icon={<AssignmentIcon />}
             />
             <BottomNavigationAction
