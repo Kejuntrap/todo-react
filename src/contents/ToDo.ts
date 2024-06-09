@@ -90,3 +90,20 @@ export class displayToDo implements ToDoElement {
     this.viewScopeChangedDate = INITIAL_DATE;
   }
 }
+
+
+function makeTodosTest(vol: number): displayToDo[] {
+  let returnToDos: displayToDo[] = new Array<displayToDo>();
+  for (let i: number = 0; i < vol; i++) {
+    const _tmpToDo: inputToDo = new inputToDo(
+      'test' + (i + 1),
+      'Tokyo',
+      'test todo task:' + (i + 1),
+      new Date(Date.now()),
+      new Date(Date.now()),
+    );
+    const _tmpdispTodo: displayToDo = new displayToDo(_tmpToDo);
+    returnToDos = [...returnToDos, _tmpdispTodo];
+  }
+  return returnToDos;
+}
