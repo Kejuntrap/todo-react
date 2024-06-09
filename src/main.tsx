@@ -7,6 +7,7 @@ import ToDos from './contents/ToDos';
 import Test from './contents/Test';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CssBaseline } from '@mui/material';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CssBaseline>
+      <RouterProvider router={router} />
+    </CssBaseline>
   </React.StrictMode>,
 );
