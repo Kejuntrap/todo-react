@@ -48,7 +48,7 @@ function App(): ReactElement {
           flexDirection: 'column',
           minHeight: '100vh',
           maxWidth: '100%',
-          margin: 0,
+          mt: '56px', mb: '56px', ml: '0px', mr: '0px'
         }}
       >
         <AppBar position='fixed'>

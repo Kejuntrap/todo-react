@@ -48,9 +48,14 @@ function ToDos(): ReactElement {
                 maxWidth: '97vw',
                 marginTop: '8px',
                 marginBottom: '8px',
+                border: 1,
+                textAlign: 'start'
               }}
             >
-              <Typography variant='h3'>{singleTodo.todoTitle}</Typography>
+              <Typography variant='h4'>{singleTodo.todoTitle}</Typography>
+              <Typography variant='h5'>place:{singleTodo.todoPlace}</Typography>
+              <Typography>id:{singleTodo.id}</Typography>
+              <Typography>Date:{singleTodo.todoDeadLineDate.toLocaleDateString()} {singleTodo.todoDeadLineDate.toTimeString()}</Typography>
             </Card>
           );
         })}
