@@ -43,7 +43,13 @@ function App(): ReactElement {
     <>
       <CssBaseline />
       <Box
-        sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', maxWidth: '100%', margin: 0 }}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+          maxWidth: '100%',
+          margin: 0,
+        }}
       >
         <AppBar position='fixed'>
           <Container maxWidth='sm'>
@@ -92,9 +98,22 @@ function App(): ReactElement {
         <Box>
           <Outlet />
         </Box>
-        <Box position='sticky' sx={{ display: 'flex', flexDirection: 'column', maxWidth: '100%', margin: 0 }}>
+        <Box
+          position='sticky'
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            maxWidth: '100%',
+            margin: 0,
+          }}
+        >
           <BottomNavigation
-            sx={{ position: 'fixed', bottom: 0, width: '100vw', boxSizing: 'content-box' }}
+            sx={{
+              position: 'fixed',
+              bottom: 0,
+              width: '100vw',
+              boxSizing: 'content-box',
+            }}
             showLabels
             value={value}
             onChange={(e, value) => handleTabChange(e, value)}
@@ -111,7 +130,7 @@ function App(): ReactElement {
             />
           </BottomNavigation>
         </Box>
-      </Box >
+      </Box>
     </>
   );
 }

@@ -1,9 +1,9 @@
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 const INITIAL_DATE: Date = new Date(1970, 1, 1, 0, 0, 0);
 
 interface ToDoContent {
-  id:string;
+  id: string;
   todoTitle: string;
   todoPlace: string;
   todoMemo: string;
@@ -22,7 +22,7 @@ interface ToDoElement extends ToDoContent {
 
 /**
  * ToDoを登録するときの情報
- * 
+ *
  * @param id ToDoの識別子
  * @param todoTitle やることの情報（文字数64以下くらい？）
  * @param todoPlace やることの場所（文字数64以下くらい？）
